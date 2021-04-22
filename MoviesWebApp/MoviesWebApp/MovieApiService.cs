@@ -20,9 +20,9 @@ namespace MoviesWebApp
         }
 
         
-        async public Task<List<MovieModel>> GetMovies(string title, string type)
+        async public Task<List<MovieModel>> GetMovies()
         {
-            var url = string.Format("/?t={0}&type={1}&apikey=4a249f8d", title, type);
+            var url = string.Format("/?s=batman&apikey=991484d1");
             var result = new List<MovieModel>();
             var response = await client.GetAsync(url);
             if (response.IsSuccessStatusCode)

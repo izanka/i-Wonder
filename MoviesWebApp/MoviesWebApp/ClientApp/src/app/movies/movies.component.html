@@ -1,20 +1,20 @@
 <div>
-  <h3>Batman Movie Finder</h3>
-
-  <h6>Movies found: {{movies.length}}</h6>
+  <br/>
+  <br/>
+  <h5>Batman movies found: {{movies.length}}</h5>
   <ul>
     <li *ngFor="let movie of movies">
       {{movie.Title}}
     </li>
   </ul>
-
+  <br/>
   <table id="moviesTable">
     <tr>
-      <td><h6>Title</h6></td>
-      <td><h6>Year</h6></td>
-      <td><h6>imdb ID</h6></td>
-      <td><h6>Type</h6></td>
-      <td><h6>Poster</h6></td>
+      <th><h6>Title</h6></th>
+      <th><h6>Year</h6></th>
+      <th><h6>IMDb ID</h6></th>
+      <th><h6>Type</h6></th>
+      <th><h6>Poster</h6></th>
     </tr>
     <tr *ngFor="let movie of movies">
       <td>{{movie.Title}}</td>

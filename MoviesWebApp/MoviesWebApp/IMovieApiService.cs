@@ -7,6 +7,6 @@ namespace MoviesWebApp
 {
     public interface IMovieApiService
     {
-        Task<List<MovieModel>> GetMovies(string title, string type);
+        Task<List<MovieModel>> GetMovies();
     }
 }

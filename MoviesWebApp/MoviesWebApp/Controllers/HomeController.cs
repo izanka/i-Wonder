@@ -15,10 +15,10 @@ namespace MoviesWebApp.Controllers
             _movieApiService = movieApiService;
         }
 
-        public async Task<IActionResult> Index(string title, string type)
+        public async Task<IActionResult> Index()
         {
             List<MovieModel> movies = new List<MovieModel>();
-            movies = await _movieApiService.GetMovies(title, type);
+            movies = await _movieApiService.GetMovies();
 
             return View(movies);
         }

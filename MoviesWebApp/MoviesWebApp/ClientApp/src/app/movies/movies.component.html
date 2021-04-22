@@ -1,13 +1,11 @@
 <div>
-  <h3>Movie Finder</h3>
-  <p>Movie title:</p>
-  <input type="text" id="txtMovieTitle" name="Movie Title" />
-  <br/>
-  <br/>
-  <p>Type:</p>
-  <input type="text" id="txtType" name="Type" />
-  <br/>
-  <br/>
-    <input type="submit" value="Submit" />
+  <h3>Batman Movie Finder</h3>
+  
+  <h6>Movies found: {{movies.length}}</h6>
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{movie.Title}}
+    </li>
+  </ul>
   
 </div>

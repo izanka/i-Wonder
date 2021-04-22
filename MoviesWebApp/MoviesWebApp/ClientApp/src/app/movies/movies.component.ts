@@ -7,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
+  movies = [
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'},
+    {title: 'ABC'}
+  ]
+
   constructor() { }
 
   ngOnInit() {
-    
+    fetch('https://www.omdbapi.com/?s=batman&apikey=991484d1').then(response => response.json()).then(res => this.movies = res.Search);
   }
 
 }
+

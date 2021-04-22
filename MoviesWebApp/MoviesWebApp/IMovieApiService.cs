@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MoviesWebApp
 {
-    interface IMovieApiService
+    public interface IMovieApiService
     {
         Task<List<MovieModel>> GetMovies(string title, string type);
     }

@@ -8,12 +8,11 @@
     </li>
   </ul>
 
-  <table>
+  <table id="moviesTable">
     <tr>
       <td><h6>Title</h6></td>
       <td><h6>Year</h6></td>
       <td><h6>imdb ID</h6></td>
-      <td><h6>Plot</h6></td>
       <td><h6>Type</h6></td>
       <td><h6>Poster</h6></td>
     </tr>
@@ -21,9 +20,8 @@
       <td>{{movie.Title}}</td>
       <td>{{movie.Year}}</td>
       <td>{{movie.imdbID}}</td>
-      <td>{{movie.Plot}}</td>
       <td>{{movie.Type}}</td>
-      <td>{{movie.Poster}}</td>
+      <td><img src="{{movie.Poster}}" alt="" border=3 height=100 width=100></td>
     </tr>
   </table>
 </div>

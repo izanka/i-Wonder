@@ -20,14 +20,6 @@ export class MoviesComponent implements OnInit {
     {title: 'ABC'}
   ]
 
-  details = [
-    { name: 'Year' },
-    { name: 'Director' },
-    { name: 'Plot' },
-    { name: 'Rotten Tomatoes Rating' },
-    { name: 'Poster' }
-  ]
-
   constructor() { }
 
   ngOnInit() {
